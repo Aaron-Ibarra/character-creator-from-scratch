@@ -1,5 +1,5 @@
 import React from 'react';
-import './Catchphrase.css';
+import './Stats.css';
 
 export default function Catchphrase() {
   return <div>Catchphrase</div>;
