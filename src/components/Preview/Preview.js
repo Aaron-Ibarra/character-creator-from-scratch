@@ -6,6 +6,7 @@ import './Preview.css';
 export default function Preview({ character, kart, wheels }) {
   return (
     <div className="images">
+      <h3>Your Loadout!</h3>
       <img src={`${process.env.PUBLIC_URL}/characters/${character}.webp`} />
       <img src={`${process.env.PUBLIC_URL}/karts/${kart}.webp`} />
       <img src={`${process.env.PUBLIC_URL}/wheels/${wheels}.webp`} />
