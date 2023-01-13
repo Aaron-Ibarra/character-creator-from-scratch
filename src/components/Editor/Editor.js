@@ -16,10 +16,12 @@ export default function Editor({
 
   const handleKartChange = (e) => {
     setKart(e.target.value);
+    incrementKart((kartChange) => kartChange + 1);
   };
 
   const handleWheelsChange = (e) => {
     setWheels(e.target.value);
+    incrementWheels((wheelsChange) => wheelsChange + 1);
   };
 
   return (
