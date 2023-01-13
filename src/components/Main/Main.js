@@ -8,15 +8,16 @@ import Editor from '../Editor/Editor';
 import Stats from '../Stats/Stats';
 
 export default function Main() {
-  const [character, setCharacter] = useState('');
+  const [character, setCharacter] = useState('mario');
+  const [kart, setKart] = useState('standard');
 
   return (
     <main>
       <div className="left">
-        <Editor setCharacter={setCharacter} />
+        <Editor setCharacter={setCharacter} setKart={setKart} />
         <Stats />
       </div>
-      <Preview character={character} />
+      <Preview character={character} kart={kart} />
     </main>
   );
 }
