@@ -1,0 +1,9 @@
+.images img {
+  width: 150px;
+  padding: 30px;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}

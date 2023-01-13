@@ -1,0 +1,6 @@
+.customize {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 20px;
+}
