@@ -1,9 +1,17 @@
 import React from 'react';
 import './Editor.css';
 
-export default function Editor({ setCharacter, setKart, setWheels }) {
+export default function Editor({
+  setCharacter,
+  setKart,
+  setWheels,
+  incrementCharacter,
+  incrementKart,
+  incrementWheels,
+}) {
   const handleCharacterChange = (e) => {
     setCharacter(e.target.value);
+    incrementCharacter((characterChange) => characterChange + 1);
   };
 
   const handleKartChange = (e) => {
