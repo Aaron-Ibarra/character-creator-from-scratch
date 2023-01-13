@@ -9,8 +9,7 @@ main {
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-content: center;
   gap: 100px;
-  height: 100%;
 }

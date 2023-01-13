@@ -17,6 +17,8 @@ export default function Main() {
   const [wheels, setWheels] = useState('standardTires');
   const [wheelsChange, incrementWheels] = useState(0);
 
+  const [catchphrase, addCatchphrase] = useState('');
+
   return (
     <main>
       <div className="left">
@@ -30,11 +32,14 @@ export default function Main() {
           wheelsChange={wheelsChange}
           kartChange={kartChange}
           characterChange={characterChange}
+          catchphrase={catchphrase}
+          addCatchphrase={addCatchphrase}
         />
         <Stats
           wheelsChange={wheelsChange}
           kartChange={kartChange}
           characterChange={characterChange}
+          catchphrase={catchphrase}
         />
       </div>
       <Preview character={character} kart={kart} wheels={wheels} />
