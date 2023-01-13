@@ -1,7 +1,7 @@
 import React from 'react';
 import './Editor.css';
 
-export default function Editor({ setCharacter, setKart }) {
+export default function Editor({ setCharacter, setKart, setWheels }) {
   const handleCharacterChange = (e) => {
     setCharacter(e.target.value);
   };
@@ -10,8 +10,12 @@ export default function Editor({ setCharacter, setKart }) {
     setKart(e.target.value);
   };
 
+  const handleWheelsChange = (e) => {
+    setWheels(e.target.value);
+  };
+
   return (
-    <div className='customize'>
+    <div className="customize">
       <label>
         Character:
         <select onChange={handleCharacterChange}>
@@ -26,6 +30,14 @@ export default function Editor({ setCharacter, setKart }) {
           <option value="standard">Standard</option>
           <option value="dasher">B Dasher</option>
           <option value="koopa">Koopa Clown</option>
+        </select>
+      </label>
+      <label>
+        Wheels:
+        <select onChange={handleWheelsChange}>
+          <option value="standardTires">Standard</option>
+          <option value="slickTires">Slick</option>
+          <option value="monsterTires">Monster</option>
         </select>
       </label>
     </div>
